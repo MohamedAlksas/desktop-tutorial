@@ -1,0 +1,404 @@
+DEBUG:netmiko:read_channel: 
+User Access Verification
+
+Password: 
+DEBUG:netmiko:write_channel: b'********\r'
+DEBUG:netmiko:read_channel: 
+R3>
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:write_channel: b'terminal width 511\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R3>terminal width 511
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+R3>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R3>terminal length 0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+R3>terminal length 0
+DEBUG:netmiko:
+R3>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: R3>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R3>
+DEBUG:netmiko:
+Parenthesis found in pattern.
+
+pattern: (\#|>)
+
+
+This can be problemtic when used in read_until_pattern().
+
+You should ensure that you use either non-capture groups i.e. '(?:' or that the
+parenthesis completely wrap the pattern '(pattern)'
+DEBUG:netmiko:Pattern found: (\#|>) 
+R3>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R3>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+R3>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R3>
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R3>
+DEBUG:netmiko:Pattern found: ([>#]) 
+R3>
+DEBUG:netmiko:write_channel: b'configure terminal\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: configure terminal
+      ^
+% Invalid input detected at '^' marker.
+
+R3>
+DEBUG:netmiko:Pattern found: (configure\ terminal) configure terminal
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (R3.*) 
+      ^
+% Invalid input detected at '^' marker.
+
+R3>
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R3>
+DEBUG:netmiko:Pattern found: ([>#]) 
+R3>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+R3>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R3>
+DEBUG:netmiko:write_channel: b'show running-config\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show running-config
+
+DEBUG:netmiko:Pattern found: (show\ running\-config) show running-config
+DEBUG:netmiko:read_channel:          ^
+% Invalid input detected at '^' marker.
+
+R3>
+DEBUG:netmiko:read_channel: 
+
+User Access Verification
+
+Password: 
+DEBUG:netmiko:write_channel: b'********\r'
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:write_channel: b'terminal width 511\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1>terminal width 511
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+R1>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1>termin
+DEBUG:netmiko:read_channel: al length 0
+R1>
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+R1>terminal length 0
+DEBUG:netmiko:
+R1>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:
+Parenthesis found in pattern.
+
+pattern: (\#|>)
+
+
+This can be problemtic when used in read_until_pattern().
+
+You should ensure that you use either non-capture groups i.e. '(?:' or that the
+parenthesis completely wrap the pattern '(pattern)'
+DEBUG:netmiko:Pattern found: (\#|>) 
+R1>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R1>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R1>
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:Pattern found: ([>#]) 
+R1>
+DEBUG:netmiko:write_channel: b'configure terminal\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: configure terminal
+
+DEBUG:netmiko:Pattern found: (configure\ terminal) configure terminal
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel:       ^
+% Invalid input detected at '^' marker.
+
+R1>
+DEBUG:netmiko:Pattern found: (R1.*) 
+      ^
+% Invalid input detected at '^' marker.
+
+R1>
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:Pattern found: ([>#]) 
+R1>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R1>
+DEBUG:netmiko:write_channel: b'show running-config\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: show 
+DEBUG:netmiko:read_channel: running-config
+         ^
+% Invalid input detected at '^' marker.
+
+R1>
+DEBUG:netmiko:Pattern found: (show\ running\-config) show running-config
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+User Access Verification
+
+Password: 
+DEBUG:netmiko:write_channel: b'********\r'
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:write_channel: b'terminal width 511\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1>terminal width 511
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+R1>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\r\n'
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal length 0
+R1>
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+R1>terminal length 0
+DEBUG:netmiko:
+R1>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:
+Parenthesis found in pattern.
+
+pattern: (\#|>)
+
+
+This can be problemtic when used in read_until_pattern().
+
+You should ensure that you use either non-capture groups i.e. '(?:' or that the
+parenthesis completely wrap the pattern '(pattern)'
+DEBUG:netmiko:Pattern found: (\#|>) 
+R1>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R1>
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1>
+DEBUG:netmiko:Pattern found: (R1.*) 
+R1>
+DEBUG:netmiko:write_channel: b'enable\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: enable
+Password: 
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: ((?:R1|ssword)) 
+Password
+DEBUG:netmiko:write_channel: b'********\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1#
+DEBUG:netmiko:Pattern found: (R1) : 
+R1
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1#
+DEBUG:netmiko:Pattern found: (R1.*) #
+R1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+R1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R1#
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1#
+DEBUG:netmiko:Pattern found: ([>#]) 
+R1#
+DEBUG:netmiko:write_channel: b'configure terminal\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: config
+DEBUG:netmiko:read_channel: ure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#
+DEBUG:netmiko:Pattern found: (configure\ terminal) configure terminal
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (R1.*) 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1(config)#
+DEBUG:netmiko:Pattern found: ([>#]) 
+R1(config)#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+R1(config)#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R1(config)#
+DEBUG:netmiko:write_channel: b'enable password newpass\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: enable password newp
+DEBUG:netmiko:read_channel: ass
+R1(config)#
+DEBUG:netmiko:Pattern found: (enable\ password\ newpass) enable password newpass
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1(config)#
+DEBUG:netmiko:Pattern found: ([>#]) 
+R1(config)#
+DEBUG:netmiko:write_channel: b'end\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: end
+R1#
+DEBUG:netmiko:Pattern found: (end) end
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (#.*) 
+R1#
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+R1#
+DEBUG:netmiko:Pattern found: ([>#]) 
+R1#
+DEBUG:netmiko:exit_config_mode: end
+R1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+R1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is R1#
+DEBUG:netmiko:write_channel: b'write memory\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: write memory
+
+DEBUG:netmiko:Pattern found: (write\ memory) write memory
+DEBUG:netmiko:read_channel: Building configuration...
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: [OK]
+R1#
+DEBUG:netmiko:write_channel: b'\r\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: R1#
+DEBUG:netmiko:Pattern found: ([>#]) 
+R1#
+DEBUG:netmiko:write_channel: b'exit\r\n'
